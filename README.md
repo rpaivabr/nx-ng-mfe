@@ -6,6 +6,27 @@ This project was generated using [Nx](https://nx.dev).
 
 <p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
 
+## Live demo
+
+[MFEs deployed on vercel](https://nx-ng-mfe.vercel.app/login);
+[Just login MFE](https://nx-ng-mfe-login.vercel.app/) 
+- Running local, you can point to login: 'https://nx-ng-mfe-login.vercel.app/remoteEntry.js' on dashboard's webpack.config.js
+
+## Instructions
+
+- Clone the repository
+- Inside the project folder, run `npm i`;
+- Run `nx run dashboard:serve-mfe --liveReload=false` to run a dashboard project
+- Username and password are `demo` and `demo` (for testing purposes);
+
+- To run individually the login micro frontend, run `nx run login:serve` (served on port 4201);
+
+## References
+
+[How to setup a Micro Frontend with Angular and Nx](https://nx.dev/l/a/guides/setup-mfe-with-angular)
+[Module Federation](https://webpack.js.org/concepts/module-federation/)
+[Manfred Steyer's Article](https://www.angulararchitects.io/en/aktuelles/the-microfrontend-revolution-part-2-module-federation-with-angular/)
+
 🔎 **Smart, Extensible Build Framework**
 
 ## Adding capabilities to your workspace
